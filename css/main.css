@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
 /* Цвет основного текста color: #757575; */
 /* Цвет вторичного текста color: #212121; */
 /* Цвет акцент color: #2196F3; */
