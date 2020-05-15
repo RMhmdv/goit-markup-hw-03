@@ -25,6 +25,8 @@ html {
  }
 
   body {
+
+    margin: 0;
     
     color: var(--primary-text-color);
     background-color: var(--white-color);
@@ -109,16 +111,30 @@ a {
     text-align: center;
     text-transform: uppercase;
 }
+/* Container */
+
+.container {
+    
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
 /* Button */
 
 .button {
-    color: var(--white-color);
-    background-color: var(--accent-color);
+    
     display: inline-block;
     width: 200px;
     height: 50px;
-    /* padding: 10px 32px; */
+    padding: 10px 32px;
     border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    
+    
 
     font-family: inherit;
     /* font-style: normal; */
