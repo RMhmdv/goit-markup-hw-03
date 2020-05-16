@@ -55,13 +55,15 @@ a {
 /* Header */
 
 .page-header {
-    background-color: rgb(213, 230, 230);
+    /* background-color: rgb(213, 230, 230); */
     /* display: flex; */
 }
 
-.main-container {
+.container.main-container {
     display: flex;
     align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .logo {
@@ -158,11 +160,11 @@ a {
 
 .container {
     
-    display: flex;
-
     width: 1230px;
     padding-right: 15px;
     padding-left: 15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     margin: 0 auto;
     outline: 2px solid teal;
 }
@@ -195,14 +197,12 @@ a {
 
 /* Section */
 
-.section-title {
 
+.section-title {
        
     margin-top: 0;
     margin-bottom: 50px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-
+    
     color: var(--title-text-color);
 
     font-family: Roboto;
@@ -215,6 +215,14 @@ a {
 }
 
 /* Features */
+
+.container.features {
+    padding-bottom: 0;
+}
+.feature-list {
+    display: flex;
+}
+
 .title {
 
     margin-top: 0;
@@ -228,6 +236,11 @@ a {
     font-size: 14px;
     line-height: 1.2;
     text-transform: uppercase;
+    text-align: center;
+}
+.box {
+    display: block;
+    text-align: center;
 }
 .box:hover {
     background-color: var(--accent-color);
@@ -238,11 +251,30 @@ a {
     margin-bottom: 0;
 
 }
-.feature-list > .item {
-    margin-bottom: 90px;
+.feature-list .item + .item {
+    margin-left: 30px;
+}
+/* Work */
+.work-list {
+    display: flex;
+}
+.work-list .item + .item {
+    margin-left: 30px;
+}
+/* Team */
+
+.section.team {
+    background-color: var(--portfolio-bg);
 }
 
-/* Team */
+.team-list {
+    display: flex;
+}
+.social {
+    display: flex;
+    justify-content: center;
+}
+
 .team-title {
     color: var(--title-text-color);
 
@@ -263,17 +295,27 @@ a {
 .social-link:focus {
      background-color: var(--accent-color);
 }
-.team-list > .item {
-    margin-bottom: 24px;
+.team-list .item + .item {
+    margin-left: 30px;
+}
+.social .item + .item {
+    margin-left: 30px;
 }
 
 /* Clients */
-.clients-list > .item {
-    margin-bottom: 94px;
+.clients-list {
+    display: flex;
+    justify-content: space-around;
 }
 
 
 /* Footer */
+.container.footer {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 .page-footer {
     color: var(--white-color);
@@ -338,6 +380,10 @@ a {
     text-align: center;
     letter-spacing: 0.03em;
 }
+.menu-nav {
+    display: flex;
+}
+
 .title.project {
     text-transform: none;
 
