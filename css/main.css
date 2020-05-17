@@ -313,8 +313,8 @@ a {
 .container.footer {
     display: flex;
     align-items: center;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 48px;
+    padding-bottom: 28px;
 }
 
 .page-footer {
@@ -330,6 +330,8 @@ a {
 }
 
 .address {
+
+    margin-right: 180px;
     text-decoration: none;
     font-family: Roboto;
     font-style: normal;
@@ -342,6 +344,10 @@ a {
     color: rgba(255, 255, 255, 0.6);
 }
 .join {
+    
+    display: block;
+    margin-bottom: 21px;
+
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -351,7 +357,17 @@ a {
     text-align: left;
     text-transform: uppercase;
 }
+.mailing {
+    margin-left: 102px;
+}
+
+.container.copy {
+    padding-top: 18px;
+    padding-bottom: 21px;
+}
 .copyright {
+    /* display: block; */
+  
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
