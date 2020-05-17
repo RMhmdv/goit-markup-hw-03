@@ -22,6 +22,7 @@ html {
     --secondary-bg-color:#E5E5E5;
     --footer-bg-color:#2F303A;
     --portfolio-bg:#F5F4FA;
+    --border-color:#AFB1B8;
  }
 
   body {
@@ -35,7 +36,8 @@ html {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 ul {
@@ -167,7 +169,7 @@ a {
     padding-top: 94px;
     padding-bottom: 94px;
     margin: 0 auto;
-    outline: 2px solid teal;
+    /* outline: 2px solid teal; */
 }
 /* Button */
 
@@ -241,12 +243,25 @@ a {
 }
 .box {
     display: block;
-    text-align: center;
+    width: 278px;
+    height: 120px;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+
+    background-color: var(--portfolio-bg);
 }
 .box:hover {
     background-color: var(--accent-color);
 
 }
+.box-icon {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .feature-list p {
     margin-top: 0;
     margin-bottom: 0;
@@ -255,6 +270,13 @@ a {
 .feature-list .item + .item {
     margin-left: 30px;
 }
+.txt {
+    display: block;
+    width: 278px;
+    height: 75px;
+    margin-top: 10px;
+}
+
 /* Work */
 .work-list {
     display: flex;
@@ -262,6 +284,7 @@ a {
 .work-list .item + .item {
     margin-left: 30px;
 }
+
 /* Team */
 
 .section.team {
@@ -308,7 +331,26 @@ a {
     display: flex;
     justify-content: space-around;
 }
+.client {
+    display: block;
+    width: 175px;
+    height: 90px;
+    padding-top: 20px;
+    /* align-items: center; */
+    margin-bottom: 30px;
 
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+.client:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+.client-logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 /* Footer */
 .container.footer {
