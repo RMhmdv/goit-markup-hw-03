@@ -330,9 +330,9 @@ a {
 .team-list .item + .item {
     margin-left: 30px;
 }
-/* .social .item + .item {
+.social .item + .item {
     margin-left: 30px;
-} */
+}
 
 /* Clients */
 .clients-list {
@@ -366,6 +366,10 @@ a {
     align-items: center;
     padding-top: 48px;
     padding-bottom: 28px;
+}
+.net-footer {
+    width: 207px;
+    height: 81px;
 }
 
 .page-footer {
