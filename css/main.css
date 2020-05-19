@@ -51,11 +51,9 @@ ul {
 a {
     text-decoration: none;
 }
-
-/* h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-} */
-
+img {
+    display: block;
+}
 
 /* Header */
 
@@ -127,16 +125,21 @@ a {
     margin-right: 30px;
 }
 
+.contact-links .mail >img {
+    display: inline-block;
+}
+
+.contact-links .tel >img {
+    display: inline-block;
+}
+
 .contact-links .mail,
 .contact-links .tel {
     color: var(--primary-text-color);
 }
 .contact-links .mail:hover,
 .contact-links .mail:focus,
-.contact-links .mail:active {
-    color: var(--accent-color);
-}
-
+.contact-links .mail:active, 
 .contact-links .tel:hover,
 .contact-links .tel:focus,
 .contact-links .tel:active {
@@ -248,7 +251,7 @@ a {
     font-size: 14px;
     line-height: 1.2;
     text-transform: uppercase;
-    text-align: center;
+    
 }
 .box {
     display: block;
@@ -286,7 +289,7 @@ a {
 .work-list {
     display: flex;
 }
-.item.img {
+.work-list > li.item {
     display: block;
 }
 .work-list .item:not(:last-child) {
@@ -304,6 +307,7 @@ a {
     font-weight: bold;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 
 /* Team */
@@ -327,9 +331,14 @@ a {
     margin-right: auto;
 }
 
+.team-list >li >img {
+    margin-bottom: 30px;
+}
+
+
 .team-title {
 
-    margin-top: 30px;
+    margin-top: 0;
     margin-bottom: 10px;
 
     color: var(--title-text-color);
@@ -391,7 +400,7 @@ a {
 /* Footer */
 .container.footer {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     padding-top: 48px;
     padding-bottom: 28px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -468,7 +477,9 @@ a {
     padding-bottom: 21px;
 }
 .copyright {
-    /* display: block; */
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
   
     font-family: Roboto;
     font-style: normal;
