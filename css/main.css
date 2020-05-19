@@ -152,8 +152,11 @@ a {
     padding-bottom: 200px;
 }
 .hero-title {
+    width: 646px;
     margin-top: 0;
     margin-bottom: 46px;
+    margin-left: auto;
+    margin-right: auto;
    
     color:  var(--white-color);
 
@@ -167,13 +170,13 @@ a {
 
 .container {
     
-    width: 1230px;
+    width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 94px;
     padding-bottom: 94px;
     margin: 0 auto;
-    /* outline: 2px solid teal; */
+    outline: 2px solid teal;
 }
 /* Button */
 
@@ -224,8 +227,9 @@ a {
 /* Features */
 
 .container.features {
-    padding-bottom: 0;
+    border-bottom: 1px solid var(--border-color);
 }
+
 .feature-list {
     display: flex;
 }
@@ -247,7 +251,7 @@ a {
 }
 .box {
     display: block;
-    width: 278px;
+    width: 270px;
     height: 120px;
     align-items: center;
     padding-top: 25px;
@@ -267,7 +271,7 @@ a {
 }
 
 .feature-list p {
-    width: 278px;
+    width: 270px;
     height: 75px;
     margin-top: 10px;
     margin-bottom: 0;
@@ -280,6 +284,9 @@ a {
 /* Work */
 .work-list {
     display: flex;
+}
+.item.img {
+    display: block;
 }
 .work-list .item:not(:last-child) {
     margin-right: 30px;
@@ -361,7 +368,7 @@ a {
 }
 .client {
     display: block;
-    width: 175px;
+    width: 170px;
     height: 90px;
     padding-top: 20px;
     /* align-items: center; */
@@ -515,7 +522,7 @@ a {
 
 
 .projects-list >.item {
-    width: 380px;
+    width: 370px;
     border: 1px solid var(--border-color-second);
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
     border-radius: 5px;
@@ -523,6 +530,10 @@ a {
     margin-bottom: 30px;
     padding-bottom: 20px;
 }
+.projects-list > img {
+    display: block;
+}
+
 .projects-list >.item:nth-child(3n) {
     margin-right: 0;
 }
