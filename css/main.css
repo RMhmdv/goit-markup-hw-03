@@ -23,6 +23,7 @@ html {
     --footer-bg-color:#2F303A;
     --portfolio-bg:#F5F4FA;
     --border-color:#AFB1B8;
+    --border-color-main:#ECECEC;
     --border-color-second:#EEEEEE;
  }
 
@@ -176,7 +177,7 @@ a {
     padding-top: 94px;
     padding-bottom: 94px;
     margin: 0 auto;
-    outline: 2px solid teal;
+    /* outline: 2px solid teal; */
 }
 /* Button */
 
@@ -227,7 +228,7 @@ a {
 /* Features */
 
 .container.features {
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color-main);
 }
 
 .feature-list {
@@ -393,10 +394,13 @@ a {
     align-items: center;
     padding-top: 48px;
     padding-bottom: 28px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .logotype.footer {
     margin-bottom: 10px;
 }
+    
 
 .address > p {
     margin-top: 0;
@@ -479,6 +483,10 @@ a {
 }
 
 /* Portfolio styles */
+
+.page-header.portfolio {
+    border-bottom: 1px solid var(--border-color-main);
+}
 
 .container.filtr {
     padding-top: 94px;
